@@ -1,0 +1,14 @@
+{
+  "name": "fantasy-manager",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "netlify dev",
+    "build": "npm run build:frontend && npm run build:functions",
+    "build:frontend": "cd frontend && npm install && npm run build",
+    "build:functions": "cd backend && npm install && npm run build"
+  },
+  "devDependencies": {
+    "netlify-cli": "^15.0.0"
+  }
+} 
